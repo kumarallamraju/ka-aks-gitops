@@ -1,0 +1,13 @@
+apiVersion: securitytower.io/v1alpha1
+kind: Application
+metadata:
+    name: demo-app
+spec:
+    stages:
+        - name: production
+          cluster:
+            repository: https://github.com/kumarallamraju/ka-aks-gitops.git
+            name: cloudnativeAKS3
+          resources:
+            path: cluster/namespaces/demo-app
+          targetNamespace: demo-app
