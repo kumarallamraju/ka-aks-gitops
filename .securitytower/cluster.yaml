@@ -1,7 +1,0 @@
-apiVersion: securitytower.io/v1alpha1
-kind: Cluster
-metadata:
-   name: ka-aks-gitops
-spec:
-   policies:
-      path: /policies
